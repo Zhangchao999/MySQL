@@ -1,5 +1,5 @@
 # mysql
-## mysql 触发器
+## 触发器
 
 前提 <br>
 有两个表 t_student(id,studentName,studentDesc) t_user(id,userName)
