@@ -41,6 +41,12 @@ END
 ![图片3](https://github.com/Zhangchao999/mysql/raw/master/picture/trigger/3.png)
 ![图片4](https://github.com/Zhangchao999/mysql/raw/master/picture/trigger/4.png)
 <br>
+```sql
+触发器的NEW 和 OLD：
+NEW 为添加的字段对象；
+OLD 为删除的字段对象 ;
+```
+
 
 ##存储过程
 
@@ -61,4 +67,27 @@ call select_student_good();
 ![图片5](https://github.com/Zhangchao999/mysql/raw/master/picture/trigger/5.png)<br>
 查询后的数据：<br>
 ![图片6](https://github.com/Zhangchao999/mysql/raw/master/picture/trigger/6.png)
+<br>
+
+带IN参数的：
+```sql
+CREATE PROCEDURE select_student(
+	IN description VARCHAR(20)
+)
+BEGIN
+
+	SELECT * from t_student where studentDesc=description;
+END
+```
+查询：
+```sql
+call select_student('bad');
+```
+查看结果：<br>
+查询后的数据：<br>
+![图片7](https://github.com/Zhangchao999/mysql/raw/master/picture/trigger/7.png)
+<br>
+
+带IN 和 OUT 的存储过程：
+![图片8](https://github.com/Zhangchao999/mysql/raw/master/picture/trigger/8.png)
 <br>
