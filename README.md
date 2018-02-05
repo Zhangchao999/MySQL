@@ -57,8 +57,8 @@ call select_student_good();
 ```
 
 查看结果：<br>
-开始数据：
+开始数据：<br>
 ![图片5](https://github.com/Zhangchao999/mysql/raw/master/picture/trigger/5.png)
-查询后的数据：
+查询后的数据：<br>
 ![图片6](https://github.com/Zhangchao999/mysql/raw/master/picture/trigger/6.png)
 <br>
