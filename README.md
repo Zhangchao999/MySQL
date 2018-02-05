@@ -64,9 +64,9 @@ call select_student_good();
 
 查看结果：<br>
 开始数据：<br>
-![图片5](https://github.com/Zhangchao999/mysql/raw/master/picture/trigger/5.png)<br>
+![图片5](https://github.com/Zhangchao999/mysql/raw/master/picture/procedure/5.png)<br>
 查询后的数据：<br>
-![图片6](https://github.com/Zhangchao999/mysql/raw/master/picture/trigger/6.png)
+![图片6](https://github.com/Zhangchao999/mysql/raw/master/picture/procedure/6.png)
 <br>
 
 带IN参数的：
@@ -85,9 +85,9 @@ call select_student('bad');
 ```
 查看结果：<br>
 查询后的数据：<br>
-![图片7](https://github.com/Zhangchao999/mysql/raw/master/picture/trigger/7.png)
+![图片7](https://github.com/Zhangchao999/mysql/raw/master/picture/procedure/7.png)
 <br>
 
 带IN 和 OUT 的存储过程：
-![图片8](https://github.com/Zhangchao999/mysql/raw/master/picture/trigger/8.png)
+![图片8](https://github.com/Zhangchao999/mysql/raw/master/picture/procedure/8.png)
 <br>
