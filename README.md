@@ -21,3 +21,6 @@ BEGIN
  操作
 END
 ```
+
+查看结果：<br>
+![图片1](https://github.com/Zhangchao999/mysql/raw/master/picture/trigger/1.png)
