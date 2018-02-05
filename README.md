@@ -24,3 +24,5 @@ END
 
 查看结果：<br>
 ![图片1](https://github.com/Zhangchao999/mysql/raw/master/picture/trigger/1.png)
+![图片2](https://github.com/Zhangchao999/mysql/raw/master/picture/trigger/2.png)
+
