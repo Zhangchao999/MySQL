@@ -41,3 +41,24 @@ END
 ![图片3](https://github.com/Zhangchao999/mysql/raw/master/picture/trigger/3.png)
 ![图片4](https://github.com/Zhangchao999/mysql/raw/master/picture/trigger/4.png)
 <br>
+
+##存储过程
+
+简单的实例：
+```sql
+CREATE PROCEDURE select_student_good()
+BEGIN
+	SELECT * from t_student where studentDesc='good';
+END
+```
+查询：
+```sql
+call select_student_good();
+```
+
+查看结果：<br>
+开始数据：
+![图片5](https://github.com/Zhangchao999/mysql/raw/master/picture/trigger/5.png)
+查询后的数据：
+![图片6](https://github.com/Zhangchao999/mysql/raw/master/picture/trigger/6.png)
+<br>
