@@ -7,6 +7,7 @@
 t_user 用来收集 insert 操作的t_student 数据
 例如 在 t_student 表中添加了一个字段（null,'张三','3年2班'）的话，会自动的在t_user 上生成 一行数据（null,'张三'）；这就是触发器。 <br>
 
+添加操作：
 ``` sql
 create TRIGGER insert_student_to_user 
 AFTER INSERT ON t_student FOR EACH ROW
@@ -25,4 +26,18 @@ END
 查看结果：<br>
 ![图片1](https://github.com/Zhangchao999/mysql/raw/master/picture/trigger/1.png)
 ![图片2](https://github.com/Zhangchao999/mysql/raw/master/picture/trigger/2.png)
+<br>
 
+删除操作：
+```sql
+create TRIGGER delete_student_to_user 
+AFTER DELETE ON t_student FOR EACH ROW
+BEGIN
+DELETE FROM t_user WHERE userName=OLD.studentName;
+END
+```
+
+查看结果：<br>
+![图片3](https://github.com/Zhangchao999/mysql/raw/master/picture/trigger/3.png)
+![图片4](https://github.com/Zhangchao999/mysql/raw/master/picture/trigger/4.png)
+<br>
