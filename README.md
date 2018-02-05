@@ -44,7 +44,7 @@ END
 
 ##存储过程
 
-简单的实例：
+简单的实例：(查询studentDesc 字段为good的数据)
 ```sql
 CREATE PROCEDURE select_student_good()
 BEGIN
