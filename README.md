@@ -3,7 +3,7 @@
 # TOP
 [触发器](#触发器)<br>
 [存储过程](#存储过程)<br>
-[group by 用法](group-by-用法)<br>
+[group by 用法](#group-by-用法)<br>
 
 ---------
 
