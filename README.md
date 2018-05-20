@@ -104,3 +104,18 @@ call select_student('bad');
 带IN 和 OUT 的存储过程：
 ![图片8](https://github.com/Zhangchao999/mysql/raw/master/picture/procedure/8.png)
 <br>
+
+## group by 用法
+
+group by 字句用于将查询结果按照某一行或者某一类的值分类，相同的为一组(这里说的一组就是放在一行上，以MySQL为例。)。<br>
+group by 可以使用GROUP_CONCAT( * )显示详细的信息。<br>
+说到group by 就得说一说 having了。<br>
+having 是与 group by一起用的，也只能以group by一起使用。having是在 group by 分组之后的又一次过滤，所以having的条件必须是要显示的类信息的。<br>
+下图为group by 与 GROUP_CONCAT( * )的使用：<br>
+![图片1](https://github.com/Zhangchao999/mysql/raw/master/picture/other/1.png)
+
+若是相对具体的信息进行查询，例如：以选择为组查询 142001的选课情况。(这个不是最好的查询方式，只是为了使用 group by 与 having)
+![图片1](https://github.com/Zhangchao999/mysql/raw/master/picture/other/2.png)
+ 
+
+
